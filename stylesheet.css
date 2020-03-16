@@ -1,0 +1,87 @@
+::-moz-selection {
+    color: white;
+    background: lightseagreen;
+  }
+  
+  ::selection {
+    color: white;
+    background: lightseagreen;
+  }
+
+* {
+    font-family: "Roboto";
+}
+
+body {
+    margin: 0 10% 0 10%;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar * {
+    font-size: 1em;
+}
+
+.nav-link, #home-link {
+    color: black;
+    text-decoration: none;
+    border-bottom: solid transparent 1px;
+    transition: border-bottom 0.2s;
+}
+
+.nav-link:hover {
+    border-bottom: solid mediumseagreen 1px;
+}
+
+/* Title Page */
+
+#landing-box {
+    width: 100%;
+}
+
+#title {
+    margin: 20px 0 20px 0;
+    border-bottom: solid transparent 1px;
+}
+
+#hello {
+    margin: 30vh 0 0 0;
+    display: flex;
+    max-width: max(400px, 45vw);
+    align-items: center;
+}
+
+#hello-title {
+    font-size: max(3em, 5vw);
+    margin: 0;
+}
+
+#hello-text {
+    font-size: max(1em, 1.2vw);
+    margin: 5px 0 5px 0;
+}
+
+.link {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.link:hover {
+    color: mediumseagreen;
+}
+
+/* About Page */
+
+#about-image{
+    width: max(20vh, 400px);
+}
