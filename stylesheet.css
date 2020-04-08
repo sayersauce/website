@@ -53,10 +53,15 @@ h1, h2 {
 }
 
 #hello {
-    margin: 30vh 0 0 0;
+    margin: 20vh 0 0 0;
     display: flex;
-    max-width: max(400px, 45vw);
     align-items: center;
+    justify-content: space-between;
+}
+
+#hello-container {
+    width: max(400px, 45vw);
+    margin: 0 0 10vh 0;
 }
 
 #hello-title {
@@ -67,6 +72,11 @@ h1, h2 {
 #hello-text {
     font-size: max(1em, 1.2vw);
     margin: 5px 0 5px 0;
+}
+
+#star-canvas {
+    margin: 0 0 10vh 0;
+    width: max(160px, 20vw);
 }
 
 .link {
