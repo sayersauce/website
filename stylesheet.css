@@ -21,7 +21,7 @@ body {
     margin: 0 10% 0 10%;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 500;
 }
@@ -48,6 +48,11 @@ h1, h2 {
 
 .nav-link:hover {
     background: #f0f0f0;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: black;
 }
 
 #nav-title {
@@ -99,6 +104,39 @@ h1, h2 {
 
 .link:hover {
     color: mediumseagreen;
+}
+
+/* Projects Page */
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: 300px;
+    min-height: 400px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid darkviolet;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    transition: all 100ms;
+}
+
+.project:hover {
+    background-color: #f4f4f4;
+}
+
+.project h3 {
+    margin: 10px;
+}
+
+.project p, .project a, .project i {
+    margin: 0 10px;
 }
 
 /* About Page */
