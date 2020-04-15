@@ -1,0 +1,40 @@
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: -20px;
+}
+
+#nav-bar * {
+    font-size: 14px;
+}
+
+.nav-link {
+    color: #494949;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 100ms;
+    border-radius: 3px;
+    padding: 3px 10px 3px 10px;
+}
+
+.nav-link:hover {
+    background: #f0f0f0;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-title {
+    margin: 18px 0 18px 0;
+    border-bottom: solid transparent 1px;
+}
+
+.current {
+    color: black;
+}

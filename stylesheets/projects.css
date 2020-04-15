@@ -1,0 +1,36 @@
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.project {
+    width: 100%;
+    height: 300px;
+    transition: background-color 300ms;
+    text-decoration: none;
+    color: black;
+}
+
+.project:hover {
+    background: #fafafa;
+}
+
+.project p {
+    width: min(100%, 800px);
+}
+
+.project h2 {
+    margin: 20px 0 10px 0;
+}
+
+.image-right {
+    float: right;
+    margin: 0 0 0 30px;
+}
+
+.image-left {
+    float: left;
+    margin: 0 30px 0 0;
+}
