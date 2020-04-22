@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap');
+
 #nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid gainsboro;
     width: 100%;
-    padding: 0 20px;
-    margin-left: -20px;
 }
 
 #nav-bar * {
@@ -19,6 +18,7 @@
     transition: background-color 100ms;
     border-radius: 3px;
     padding: 3px 10px 3px 10px;
+    margin: 18px 0 14px 0;
 }
 
 .nav-link:hover {

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
 
 ::-moz-selection {
     color: white;
@@ -47,14 +48,17 @@ h1, h2, h3 {
 }
 
 #hello-title {
-    font-size: max(3em, 4.5vw);
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: max(3em, 7vw);
     font-weight: 700;
     margin: 0;
 }
 
 #hello-text {
-    font-size: max(1em, 1.2vw);
-    margin: 5px 0 5px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: max(1em, 1.3vw);
+    margin: -10px 0 5px 0;
 }
 
 #star-canvas {
