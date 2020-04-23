@@ -4,11 +4,13 @@
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+const swapElement = document.getElementById("swaps");
 const cx = canvas.width / 2;
 const cy = canvas.width / 2;
 const dx = canvas.width / 2;
 const dy = canvas.width / 2;
 let bars = [];
+let swaps = 0;
 
 class Bar {
     constructor(value, style) {
@@ -33,8 +35,8 @@ class Bar {
 }
 
 function incrementSwaps() {
-    const swaps = document.getElementById("swaps");
-    swaps.innerText = parseInt(swaps.innerText) + 1;
+    swaps++;
+    swapElement.innerText = swaps;
 }
 
 function shuffle() {

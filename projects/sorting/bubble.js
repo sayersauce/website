@@ -3,26 +3,37 @@
 // Sorting Algorithms - Bubble Sort
 
 function bubble(list) {
-    let sorted = false;
+    let finished = false;
+    let sorted = true;
+    let index = 0;
 
+    // Loop has to be an interval to avoid blocking and to draw to canvas
     const loop = setInterval(() => {
-        if(sorted) {
+        if(finished) {
             clearInterval(loop);
         }
 
-        sorted = true;
-
-        for(let i = 0; i < list.length - 1; i++) {
-            let current = list[i];
-            let next = list[i + 1];
-    
-            if(current.value > next.value) {
-                swap(list, i);
-                sorted = false;
+        if(index < list.length - 1) {
+            if(check(list, index) === false) sorted = false;
+            index++;
+        } else {
+            if(sorted) {
+                finished = true;
             }
+            index = 0;
         }
 
     }, 0)
+}
+
+function check(list, index) {
+    let current = list[index];
+    let next = list[index + 1];
+
+    if(current.value > next.value) {
+        swap(list, index);
+        return false;
+    }
 }
 
 function swap(list, index) {
