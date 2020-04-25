@@ -43,6 +43,9 @@ function shuffle() {
     const length = bars.length;
     const tempBars = bars;
     bars = [];
+    swaps = 0;
+    swapElement.innerText = swaps;
+
     for(let i = 0; i < length; i += 1) {
         const index = Math.floor(Math.random() * tempBars.length);
         const bar = tempBars[index];

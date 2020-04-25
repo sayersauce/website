@@ -27,6 +27,7 @@ function bubble(list) {
 }
 
 function check(list, index) {
+    // Checks elements and swaps them if they need to be
     let current = list[index];
     let next = list[index + 1];
 
