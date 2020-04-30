@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    color: royalblue;
+    transition: color 150ms;
+}
+
+a:hover {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+canvas {
+    margin-left: 20px;
+}
+
+#home-container {
+    width: max(60%, 700px);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
+}

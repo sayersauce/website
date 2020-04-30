@@ -4,26 +4,40 @@
         <meta charset="UTF-8">
         <title>Max Sayer</title>
         <link rel="stylesheet" href="stylesheets/all.css" type="text/css">
-        <link rel="stylesheet" href="stylesheets/nav.css" type="text/css">
+        <link rel="stylesheet" href="stylesheets/home.css" type="text/css">
         <link rel="icon" href="images/icon.png">
     </head>
     <body>
-        <div id="nav-bar">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="https://github.com/sayersauce">GitHub</a>
-        </div>
-        <div id="home-box">
-            <div id="hello">
-                <div id="hello-container">
-                    <h1 id="hello-title">MAX SAYER</h1>
-                    <p id="hello-text">Hello there.</p>
+        <div id="home-container">
+            <div>
+                <h1>Max Sayer</h1>
+                <p>
+                    I am someone who enjoys the finer things in life. With examples ranging from sock collection 🧦 or watching sitcoms 📺 to reading books 📚.
+                    Sometimes I get a kick from programming. Have a glance at some of <a href="/projects">my projects here</a>, or on my <a href="https://github.com/sayersauce">GitHub</a>.
+                    Feel free to contact me through my <a href="mailto:contact@max.lat">E-mail</a>, <a class="discord">Discord</a> or <a href="https://en.wikipedia.org/wiki/Homing_pigeon">your preferred means of communication</a> to have a chat.
+                </p>
+                <div class="horizontal-list">
+                    <h4>Things to have a look at: </h4>
+                    <a href="/projects">Projects</a>
+                    <a href="https://github.com/sayersauce">GitHub</a>
                 </div>
-                <canvas id="star-canvas" width="500" height="500"></canvas>
+                <div class="horizontal-list">
+                    <h4>Contact me: </h4>
+                    <a href="mailto:contact@max.lat">E-mail</a>
+                    <a class="discord">Discord</a>
+                </div>
             </div>
+            <canvas id="star-canvas" width="250" height="250"></canvas>
         </div>
         <script src="scripts/starfield.js"></script>
+        <script>
+            // Discord name on-click.
+            const name = "sayersauce#4319";
+            for (link of document.getElementsByClassName("discord")) {
+                link.addEventListener("click", () => {
+                    window.alert("Send me a message @" + name + ".");
+                });
+            }
+        </script>
     </body>
 </html>

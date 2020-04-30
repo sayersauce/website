@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Max Sayer</title>
         <link rel="stylesheet" href="stylesheets/all.css" type="text/css">
-        <link rel="stylesheet" href="stylesheets/nav.css" type="text/css">
         <link rel="stylesheet" href="stylesheets/projects.css" type="text/css">
         <link rel="icon" href="images/icon.png">
     </head>
     <body>
-        <div id="nav-bar">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="projects.html">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="https://github.com/sayersauce">GitHub</a>
-        </div>
-        <div id="projects">
-            <a href="projects/sorting/sorting.html" class="project">
-                <img class="image-left" src="images/wheel.gif" width="300" height="300">
-                <h2>Sorting Algorithms</h2>
-                <i>April 2020</i>
-                <p>Multiple sorting algorithms which sort a colour wheel.</p>
-            </a>
-            <a href="projects/maze/maze.html" class="project">
-                <img class="image-left" src="images/maze.gif" width="300" height="300">
-                <h2>Maze Generation</h2>
-                <i>April 2020</i>
-                <p>A mini-project which generates mazes onto an HTML5 canvas. It uses a Recursive Backtracker algorithm to draw the maze.</p>
-            </a>
+        <div id="projects-container">
+            <a href="/"><h2>Max Sayer</h2></a>
+            <h1>Projects</h1>
+            <div id="projects">
+                <a href="projects/sorting" class="project">
+                    <div>
+                        <h4>Sorting Algorithms</h4>
+                        <p>Multiple sorting algorithms which sort a colour wheel.</p>
+                        <div id="tags">
+                            <p class="js tag">JavaScript</p>
+                            <p class="date tag">April 2020</i>
+                        </div>
+                    </div>
+                </a>
+                <a href="projects/maze" class="project">
+                    <div>
+                        <h4>Maze Generation</h4>
+                        <p>A project which generates mazes onto an HTML5 canvas. It uses a Recursive Backtracker algorithm to draw the maze.</p>
+                        <div id="tags">
+                            <p class="js tag">JavaScript</p>
+                            <p class="date tag">April 2020</i>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </body>
 </html>
