@@ -22,7 +22,7 @@ canvas {
 }
 
 #home-container {
-    width: max(60%, 700px);
+    width: max(860px, 60%);
     display: flex;
     align-items: center;
     margin-bottom: 10%;
