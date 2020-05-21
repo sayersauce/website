@@ -3,12 +3,12 @@
 
 ::-moz-selection {
     color: white;
-    background: royalblue;
+    background: #252525;
   }
   
   ::selection {
     color: white;
-    background: royalblue;
+    background: #252525;
   }
 
 * {

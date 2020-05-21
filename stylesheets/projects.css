@@ -3,23 +3,34 @@ body {
     justify-content: center;
 }
 
+#title {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+#title h1 {
+    margin: 0;
+}
+
 #projects-container {
     width: max(860px, 60%);
-    margin: 10px 0;
 }
 
 .project {
     width: calc(100% + 20px);
     transition: background-color 200ms;
     padding: 5px 10px;
-    margin-left: -10px;
+    margin: 25px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0 0.5em 0.75em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
 }
 
 .project:hover {
-    background-color: #f8f8f8;
+    background-color: #fafafa;
 }
 
 .project h4, .project i, .project p {
