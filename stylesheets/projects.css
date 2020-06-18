@@ -25,7 +25,7 @@ a, h4, i, p {
 }
 
 .fade-in {
-    transition: 400ms;
+    transition: 800ms;
     opacity: 100% !important;
 }
 
