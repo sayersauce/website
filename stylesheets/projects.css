@@ -3,6 +3,10 @@ body {
     justify-content: center;
 }
 
+a, h4, i, p {
+    margin: 5px 0;
+}
+
 #title {
     text-align: center;
     margin: 0 0 40px 0;
@@ -17,24 +21,31 @@ body {
 }
 
 .project {
-    transition: background-color 200ms;
-    padding: 5px 10px;
-    margin: 25px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.project, .github-repo {
+    transition: background-color 200ms;
+    padding: 10px;
+    margin: 25px 0;
     border-radius: 5px;
-    border: 1px solid #f4f4f4;
-    box-shadow: 0 0.5em 0.75em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+    border: 1px solid #eaeaea;
 }
 
-.project:hover {
-    background-color: #fafafa;
+.project a, .github-repo a {
+    font-weight: bold;
+    transition: 200ms;
 }
 
-.project h4, .project i, .project p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+.project a:hover, .github-repo a:hover {
+    color: royalblue;
+}
+
+.timestamp {
+    color: #aaa;
+    margin: 0 5px;
 }
 
 #tags {

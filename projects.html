@@ -12,30 +12,63 @@
             <a href="/"><h2>Max Sayer</h2></a>
             <div id="title">
                 <h1>Projects</h1>
-                <p>These projects made the cut.</p>
+                <p>These projects made the cut or they were fetched from my GitHub.</p>
             </div>
             <div id="projects">
-                <a href="projects/sorting" class="project">
+                <div class="project">
                     <div>
-                        <h4>Sorting Algorithms</h4>
+                        <a href="projects/sorting">Sorting Algorithms</a>
                         <p>Multiple sorting algorithms which sort a colour wheel.</p>
                         <div id="tags">
                             <p class="js tag">JavaScript</p>
                             <p class="date tag">April 2020</i>
                         </div>
                     </div>
-                </a>
-                <a href="projects/maze" class="project">
+                </div>
+                <div class="project">
                     <div>
-                        <h4>Maze Generation</h4>
+                        <a href="projects/maze">Maze Generation</a>
                         <p>A project which generates mazes onto an HTML5 canvas. It uses a Recursive Backtracker algorithm to draw the maze.</p>
                         <div id="tags">
                             <p class="js tag">JavaScript</p>
                             <p class="date tag">April 2020</i>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
+            <script>
+                addEventListener("load", async function() {
+                    const name = "sayersauce";
+                    const repoDiv = document.getElementById("projects");
+                    let response;
+                
+                    response = await fetch(`https://api.github.com/users/${name}/repos?sort=updated`);
+                    let repos = await response.json();
+        
+                    response = await fetch("https://raw.githubusercontent.com/ozh/github-colors/master/colors.json");
+                    let colours = await response.json();
+        
+                    for (let repo of repos) {
+                        let div = document.createElement("div");
+                        let timestamp = new Date(repo.updated_at);
+                        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        div.className = "github-repo";
+                        div.innerHTML = `
+                            <div style="display: flex; align-items: center;">
+                                <a href="${repo.html_url}">${repo.name}</a>         
+                                <p class="timestamp">${months[timestamp.getMonth()] + " " + timestamp.getUTCDate() + ", " + timestamp.getFullYear()}</p>
+                            </div>
+                            <p>${repo.description}</p>
+                            <div style="display: flex; align-items: center;">
+                                <i style="width: 12px; height:12px; border-radius: 100%; background-color: ${colours[repo.language].color}; display: inline-block;"></i>
+                                <p class="language" style="margin: 4px;">${repo.language}</p>
+                            </div>
+                        `
+                        repoDiv.appendChild(div);
+                    }
+                });
+            </script>
+        
         </div>
     </body>
 </html>
