@@ -20,6 +20,15 @@ a, h4, i, p {
     width: max(860px, 60%);
 }
 
+#projects {
+    opacity: 0;
+}
+
+.fade-in {
+    transition: 400ms;
+    opacity: 100% !important;
+}
+
 .project {
     display: flex;
     justify-content: space-between;
