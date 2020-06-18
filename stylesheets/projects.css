@@ -28,7 +28,7 @@ a, h4, i, p {
 
 .project, .github-repo {
     transition: background-color 200ms;
-    padding: 10px;
+    padding: 20px;
     margin: 25px 0;
     border-radius: 5px;
     border: 1px solid #eaeaea;
@@ -37,6 +37,7 @@ a, h4, i, p {
 .project a, .github-repo a {
     font-weight: bold;
     transition: 200ms;
+    margin-top: 0;
 }
 
 .project a:hover, .github-repo a:hover {
@@ -45,7 +46,7 @@ a, h4, i, p {
 
 .timestamp {
     color: #aaa;
-    margin: 0 5px;
+    margin: 0 5px 5px 5px;
 }
 
 #tags {
