@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
-
 ::-moz-selection {
     color: white;
     background: #252525;
-  }
+}
   
-  ::selection {
+::selection {
     color: white;
     background: #252525;
-  }
+}
 
 * {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: Arial, sans-serif;
 }   
 
 html {
@@ -22,6 +19,8 @@ html {
 body {
     height: 100%;
     margin: 0 10%;
+    display: flex;
+    justify-content: center;
 }
 
 h1, h2, h3 {
@@ -41,8 +40,34 @@ a {
 
 .horizontal-list h4 {
     margin-left: 0;
+    font-weight: normal;
 }
 
 .horizontal-list * {
     margin: 0 5px;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    color: royalblue;
+    transition: color 150ms;
+}
+
+a:hover {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+canvas {
+    margin-left: 20px;
+}
+
+#home-container {
+    width: max(860px, 60%);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10%;
 }
